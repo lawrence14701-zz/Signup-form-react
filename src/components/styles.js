@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const RightSide = styled.div`
     box-sizing: border-box;
-    padding-top: 150px;
+    padding-top: 100px;
     height: 100%;
     width: 50%;
     position: fixed;
