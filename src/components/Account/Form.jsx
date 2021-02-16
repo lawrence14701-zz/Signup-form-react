@@ -43,7 +43,7 @@ const FormComponent = ({ handleChange, user, pageChange }) => {
 
                 <Label>
                     Confirm password
-                    <Input type="password" name="confirmPassowrd" onChange={handleChange} value={user.password} />
+                    <Input type="password" name="confirmPassowrd" onChange={handleChange} value={user.confirmPassword} />
                 </Label>
                 <Spacing />
                 <Flex>

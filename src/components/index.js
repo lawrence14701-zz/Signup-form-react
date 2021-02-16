@@ -24,16 +24,30 @@ const Form = () => {
     const [toggle, setToggle] = useState(false)
 
     const handleChange = (e) => {
-        const type = e.target.name
-        const value = e.currentTarget.value
-        if (type === 'name') {
-            setRestaurant({ ...restaurant, name: value })
-        } else if (type === 'outlets') {
-            setRestaurant({ ...restaurant, outlets: value })
-        } else if (type === 'country') {
-            setRestaurant({ ...restaurant, country: value })
-        } else if (type === 'hear') {
-            setRestaurant({ ...restaurant, hear: value })
+        const type = e.target.name; //name
+        const value = e.currentTarget.value;
+        if (type === "name") {
+          setRestaurant({ ...restaurant, name: value });
+        } else if (type === "outlets") {
+          setRestaurant({ ...restaurant, outlets: value });
+        } else if (type === "country") {
+          setRestaurant({ ...restaurant, country: value });
+        } else if (type === "hear") {
+          setRestaurant({ ...restaurant, hear: value });
+        } else if (type === "firstName") {
+          setUser({ ...user, firstName: value });
+        } else if (type === "lastName") {
+          setUser({ ...user, lastName: value });
+        } else if (type === "countryCode") {
+          setUser({ ...user, countryCode: value });
+        } else if (type === "number") {
+          setUser({ ...user, number: value });
+        } else if (type === "email") {
+          setUser({ ...user, email: value });
+        } else if (type === "password") {
+          setUser({ ...user, password: value });
+        } else if (type === "confirmPassword") {
+          setUser({ ...user, confirmPassword: value });
         }
     }
 
